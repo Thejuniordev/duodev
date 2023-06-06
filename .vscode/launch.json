@@ -1,0 +1,23 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "duodev",
+        "request": "launch",
+        "type": "dart",
+        "deviceId": "BA28E76D-438C-40E1-B140-72AB9E7ED078",
+        "program": "lib/main.dart"
+      },
+      {
+        "name": "duodev (profile mode)",
+        "request": "launch",
+        "type": "dart",
+        "deviceId": "BA28E76D-438C-40E1-B140-72AB9E7ED078",
+        "flutterMode": "profile",
+        "program": "lib/main.dart"
+      }
+    ]
+}
