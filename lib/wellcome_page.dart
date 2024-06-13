@@ -1,3 +1,4 @@
+import 'package:duodev/components/button.dart';
 import 'package:duodev/start/start_page.dart';
 import 'package:flutter/material.dart';
 import 'package:duodev/styles/button.dart';
@@ -13,7 +14,7 @@ class _WellcomePageState extends State<WellcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF525771),
+      backgroundColor: Color.fromARGB(255, 12, 35, 59),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,10 +39,10 @@ class _WellcomePageState extends State<WellcomePage> {
               ),
             ),
           ),
-          ElevatedButton(
+          DuoSystemButton(
+            type: DuoSystemButtonType.PRIMARY,
+            buttonText: 'ENTRAR',
             onPressed: () {},
-            style: buttonPrimary,
-            child: const Text('ENTRAR'),
           ),
           Container(
             margin: const EdgeInsets.only(bottom: 26, top: 26),
@@ -64,13 +65,13 @@ class _WellcomePageState extends State<WellcomePage> {
               ),
             ),
           ),
-          ElevatedButton(
+          DuoSystemButton(
+            type: DuoSystemButtonType.SECONDARY,
+            buttonText: 'COMEÇAR',
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const StartPage()));
             },
-            style: buttonSecondary,
-            child: const Text('COMEÇAR'),
           ),
         ],
       ),
