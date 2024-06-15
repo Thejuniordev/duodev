@@ -1,7 +1,6 @@
 import 'package:duodev/components/button.dart';
-import 'package:duodev/start/start_page.dart';
+import 'package:duodev/pages/start/start_page.dart';
 import 'package:flutter/material.dart';
-import 'package:duodev/styles/button.dart';
 
 class WellcomePage extends StatefulWidget {
   const WellcomePage({super.key});
@@ -14,7 +13,7 @@ class _WellcomePageState extends State<WellcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 12, 35, 59),
+      backgroundColor: const Color.fromARGB(255, 12, 35, 59),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
