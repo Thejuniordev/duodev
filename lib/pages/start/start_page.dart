@@ -1,5 +1,7 @@
 import 'package:duodev/components/app_bar.dart';
+import 'package:duodev/components/button.dart';
 import 'package:duodev/components/button_icon.dart';
+import 'package:duodev/components/card.dart';
 import 'package:flutter/material.dart';
 
 class StartPage extends StatelessWidget {
@@ -10,7 +12,7 @@ class StartPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 12, 35, 59),
       appBar: DuoSystemAppBar(
-        title: 'Escolha sua linguagem',
+        title: 'Escolha uma área',
         backgroundColor: Colors.transparent,
         actions: [
           DuoSystemButtonIcon(
@@ -20,8 +22,37 @@ class StartPage extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Start 1'),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Escolha a área que você quer aprender!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                DuoSystemCard(),
+                DuoSystemCard(),
+              ],
+            ),
+            const SizedBox(
+              height: 100,
+            ),
+            DuoSystemButton(
+                buttonText: 'Próximo',
+                type: DuoSystemButtonType.PRIMARY,
+                onPressed: () {}),
+          ],
+        ),
       ),
     );
   }

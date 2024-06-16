@@ -17,7 +17,8 @@ class DuoSystemAppBar extends StatelessWidget implements PreferredSizeWidget {
         title,
         style: const TextStyle(
           color: Colors.white,
-          fontSize: 15,
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
         ),
       ),
       backgroundColor: backgroundColor,
