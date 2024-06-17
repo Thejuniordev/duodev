@@ -1,8 +1,15 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:duodev/components/button.dart';
 import 'package:flutter/material.dart';
 
 class DuoSystemCard extends StatefulWidget {
-  const DuoSystemCard({super.key});
+  final String textCard;
+
+  const DuoSystemCard({
+    Key? key,
+    required this.textCard,
+  }) : super(key: key);
 
   @override
   State<DuoSystemCard> createState() => _DuoSystemCardState();
@@ -27,6 +34,16 @@ class _DuoSystemCardState extends State<DuoSystemCard> {
         ),
         image: const DecorationImage(
           image: AssetImage('lib/assets/images/airplane.svg'),
+        ),
+      ),
+      child: Center(
+        child: Text(
+          widget.textCard,
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
         ),
       ),
     );

@@ -40,8 +40,12 @@ class StartPage extends StatelessWidget {
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                DuoSystemCard(),
-                DuoSystemCard(),
+                DuoSystemCard(
+                  textCard: 'Backend',
+                ),
+                DuoSystemCard(
+                  textCard: 'Frontend',
+                ),
               ],
             ),
             const SizedBox(
